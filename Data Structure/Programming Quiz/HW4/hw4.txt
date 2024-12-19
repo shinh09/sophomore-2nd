@@ -1,0 +1,15 @@
+Problem Description
+You are given the heads of two sorted linked lists list1 and list2.Your task is to merge these two sorted linked lists into one sorted linked list. The resulting linked list should also be sorted.
+
+Input
+The input consists of the heads of two sorted linked lists list1 and list2.
+
+Output                               
+The output should be the head of a single linked list that merges list1 and list2 into a single sorted linked list. If both of list1 and list2 are null, the output is also null.
+
+Constraints
+The number of elements in both lists is in the range [0, 50].
+
+The E implements Comparable
+
+The linked lists are sorted in non-decreasing order.

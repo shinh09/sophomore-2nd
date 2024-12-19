@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "build",
+		"type": "shell",
+		"command": "gcc",
+		"args": [
+		  "/Users/shinhyung/Desktop/CS/week3/datalab-handout-updated/btest.c",  // main 함수가 있는 파일
+		  "/Users/shinhyung/Desktop/CS/week3/datalab-handout-updated/bits.c",
+		  "/Users/shinhyung/Desktop/CS/week3/datalab-handout-updated/tests.c",
+		  "/Users/shinhyung/Desktop/CS/week3/datalab-handout-updated/decl.c",
+		  "/Users/shinhyung/Desktop/CS/week3/datalab-handout-updated/dlc",
+		  "-o",
+		  "btest"
+		],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		},
+		"problemMatcher": ["$gcc"],
+		"detail": "Generated task by GCC"
+	  }
+	]
+  }
+  

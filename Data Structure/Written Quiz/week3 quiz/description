@@ -1,0 +1,26 @@
+Problem Description
+Implement a generic class HW2in Java that contains a method max which takes two parameters of the same type and returns the greater of the two. The class should be able to handle different types such as integers and strings.
+
+Input
+Two parameters of the same comparable class type (e.g., Integer, Strings).
+
+Output                        
+The greater of the two input parameters.
+
+Constraints
+The max method should be generic and work with any type that implements the Comparable interface.
+
+Both input parameters must be of the same type.
+
+Main method for Test
+public class HW2Main {
+
+       public static void main(String[] args) {
+
+             HW2<Integer> h = new<Integer> HW2();
+
+             System.out.println(h.max(5, 4));
+
+       }
+
+ 

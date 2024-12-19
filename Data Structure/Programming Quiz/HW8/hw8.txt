@@ -1,0 +1,68 @@
+Problem Description
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+Input
+String s and t: A string consisting of lowercase English letters.
+
+ 
+
+Output                        
+Returns true if t is an anagram of s, otherwise returns false.
+
+Constraints
+1< = the length of s and t is larger <= 50,000
+
+The string s and t consist of lowercase English letters
+
+Main method for Test
+ 
+
+public class HW8TestCases {
+
+public static void main(String[] args) {
+
+HW8 solution = new HW8();
+
+String s1 = "anagram";
+
+String t1 = "nagaram";
+
+System.out.println("true: "+ solution.isAnagram(s1, t1)); // true
+
+ 
+
+String s2 = "hello";
+
+String t2 = "lheho";
+
+System.out.println("false: "+ solution.isAnagram(s2, t2)); // true
+
+ 
+
+String s3 = "rat";
+
+String t3 = "car";
+
+System.out.println("false: "+ solution.isAnagram(s3, t3)); // false
+
+ 
+
+String s4 = "aaaaabbbbbcccccdddddeeeee";
+
+String t4 = "eeeeedddddcccccbbbbbaaaaa";
+
+System.out.println("true: "+ solution.isAnagram(s4, t4)); // true
+
+ 
+
+String s5 = "aaaaabbbbbcccccdddddeeeee";
+
+String t5 = "eeeeedddddcccccbbbbbaaaab";
+
+System.out.println("false: "+ solution.isAnagram(s5, t5)); // false 
+
+}
+
+}

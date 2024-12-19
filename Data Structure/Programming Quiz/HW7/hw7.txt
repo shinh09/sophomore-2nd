@@ -1,0 +1,29 @@
+Problem Description
+You are given an array of integers that is intended to represent either a max-heap or a min-heap. The array uses a 1-based indexing system, meaning the first element (index 0) of the array is not used for heap elements but contains a flag indicating the type of heap:
+
+   1 indicates that the array should be a max-heap.
+
+   -1 indicates that the array should be a min-heap.
+
+Your task is to determine if this array represents a valid heap based on the flag at index 0. In a heap, for every index i (starting from 1), the following conditions must hold:
+
+   For a max-heap, the value of the node at index i must be greater than or equal to the values of its children.
+
+   For a min-heap, the value of the node at index i must be less than or equal to the values of its children.
+
+The left child of the node at index i is located at index 2*i, and the right child of the node at index i is located at index 2*i + 1.
+
+Input
+An array of integers nums where:
+
+   nums[0] is 1 or -1, indicating whether the array should be a max-heap or a min-heap.
+
+   The rest of the array (from index 1 onwards) contains the elements of the heap.
+
+Output                        
+Return true if the array represents a valid heap according to the flag, otherwise return false.
+
+Constraints
+The array can have a length between 2 and 100,001 (inclusive of the extra flag at index 0).
+
+Each element in the array (from index 1 onwards) is an integer between -10^6 and 10^6.
